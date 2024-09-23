@@ -1,0 +1,26 @@
+{
+  "name": "dashboard-server",
+  "version": "1.0.0",
+  "description": "dashboard-server",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sweetPanel459/dashboard-server.git"
+  },
+  "keywords": [
+    "server"
+  ],
+  "author": "juan santiago andrade tuiran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sweetPanel459/dashboard-server/issues"
+  },
+  "homepage": "https://github.com/sweetPanel459/dashboard-server#readme",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}

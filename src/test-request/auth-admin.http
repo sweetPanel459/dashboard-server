@@ -7,10 +7,9 @@ Accept: application/json
 # Register user data
 POST http://localhost:4500/register-admin
 Content-Type: application/json
-Authorization: Bearer <token>
 
 {
-  "gmail"":"usergmail@",
+  "gmail":"usergmail@",
   "password": "userPassword",
   "number": "userNumber"
 }

@@ -1,8 +1,5 @@
-import { Router } from "express";
+const get_admin_data = (req, res) => console.log("hoal desde el get");
 
-export const router = Router();
+const register_admin = (req, res) => console.log("hola desde register adimin");
 
-router.post("/register-admin", (req, res) => {
-  console.log(req.body);
-  console.log("santiago");
-});
+export const auth_controller = { get_admin_data, register_admin };

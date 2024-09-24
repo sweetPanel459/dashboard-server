@@ -1,0 +1,16 @@
+
+# Get user data
+GET http://localhost:4500/get-admin-data
+Accept: application/json
+### 
+
+# Register user data
+POST http://localhost:4500/register-admin
+Content-Type: application/json
+
+{
+  "gmail":"usergmail@",
+  "password": "userPassword",
+  "number": "userNumber"
+}
+

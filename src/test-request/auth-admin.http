@@ -1,3 +1,17 @@
 
-GET http://localhost:4500/auth-admin
+# Get user data
+GET http://localhost:4500/get-admin-data
+Accept: application/json
+### 
+
+# Register user data
+POST http://localhost:4500/register-admin
+Content-Type: application/json
+Authorization: Bearer <token>
+
+{
+  "gmail"":"usergmail@",
+  "password": "userPassword",
+  "number": "userNumber"
+}
 

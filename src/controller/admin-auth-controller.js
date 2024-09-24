@@ -2,6 +2,7 @@ import { Router } from "express";
 
 export const router = Router();
 
-router.get("/auth-admin", (req, res) => {
-  console.log(req, res);
+router.post("/register-admin", (req, res) => {
+  console.log(req.body);
+  console.log("santiago");
 });

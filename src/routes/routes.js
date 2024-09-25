@@ -1,6 +1,7 @@
 import { Router } from "express";
 
 import { auth_controller } from "../controller/admin-auth-controller.js";
+import { dashboard_controller } from "../controller/dashboard-controller.js";
 
 export const router = Router();
 
@@ -11,4 +12,22 @@ router.get("/get-admin-data", (req, res) => {
 
 router.post("/register-admin", (req, res) => {
   auth_controller.register_admin(req, res);
+});
+
+// dashboard
+
+router.get("/get-table/:id", (req, res) => {
+  dashboard_controller.get_table(req, res);
+});
+
+router.post("/upload-table", (req, res) => {
+  dashboard_controller.upload_table(req, res);
+});
+
+router.update("/update-table/:id", (req, res) => {
+  dashboard_controller.update_table(req, res);
+});
+
+router.delete("/delete-table/:id", (req, res) => {
+  dashboard_controller.delete_table(req, res);
 });

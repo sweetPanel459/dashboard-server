@@ -6,7 +6,7 @@ import { dashboard_controller } from "../controller/dashboard-controller.js";
 export const router = Router();
 
 // admin auth
-router.get("/get-admin-data", (req, res) => {
+router.get("/get-admin-data/:id-table", (req, res) => {
   auth_controller.get_admin_data(req, res);
 });
 
@@ -28,7 +28,7 @@ router.put("/update-table/:id", (req, res) => {
   dashboard_controller.update_table(req, res);
 });
 
-router.delete("/delete-table/:id", (req, res) => {
+router.delete("/delete-table/:id-table", (req, res) => {
   dashboard_controller.delete_table(req, res);
 });
 

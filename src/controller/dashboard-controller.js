@@ -1,21 +1,22 @@
 const get_table = (req, res) => {
-  console.log(req, res);
+  console.log(req.body);
 };
 
 const update_table = (req, res) => {
-  console.log(req, res);
+  console.log(req.body);
 };
 
 const upload_table = (req, res) => {
-  console.log(req, res);
+  console.log(req.body);
 };
 
 const delete_table = (req, res) => {
-  console.log(req, res);
+  console.log(req.body);
 };
 
 const delete_row_table = (req, res) => {
-  console.log(req, res);
+  console.log(req.body);
+  res.json({ msg: "saliio bien" });
 };
 
 export const dashboard_controller = {

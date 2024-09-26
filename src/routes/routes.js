@@ -32,6 +32,6 @@ router.delete("/delete-table/:id", (req, res) => {
   dashboard_controller.delete_table(req, res);
 });
 
-router.delete("/delete-row-table/:id", (req, res) => {
+router.delete("/delete-row-table/:id-table/:id-row", (req, res) => {
   dashboard_controller.delete_row_table(req, res);
 });

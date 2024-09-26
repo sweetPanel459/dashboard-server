@@ -16,7 +16,7 @@ router.post("/register-admin", (req, res) => {
 
 // dashboard
 
-router.get("/get-table/:id", (req, res) => {
+router.get("/get-table", (req, res) => {
   dashboard_controller.get_table(req, res);
 });
 
@@ -24,10 +24,14 @@ router.post("/upload-table", (req, res) => {
   dashboard_controller.upload_table(req, res);
 });
 
-router.update("/update-table/:id", (req, res) => {
+router.put("/update-table/:id", (req, res) => {
   dashboard_controller.update_table(req, res);
 });
 
 router.delete("/delete-table/:id", (req, res) => {
   dashboard_controller.delete_table(req, res);
+});
+
+router.delete("/delete-row-table/:id", (req, res) => {
+  dashboard_controller.delete_row_table(req, res);
 });

@@ -16,7 +16,7 @@ router.post("/register-admin", (req, res) => {
 
 // dashboard
 
-router.get("/get-table", (req, res) => {
+router.get("/get-table/:id", (req, res) => {
   dashboard_controller.get_table(req, res);
 });
 

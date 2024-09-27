@@ -6,7 +6,7 @@ import { dashboard_controller } from "../controller/dashboard-controller.js";
 export const router = Router();
 
 // admin auth
-router.get("/get-admin-data/:id-table", (req, res) => {
+router.get("/get-admin-data", (req, res) => {
   auth_controller.get_admin_data(req, res);
 });
 

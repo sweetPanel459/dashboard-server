@@ -5,10 +5,11 @@ import { router } from "./routes/routes.js";
 
 dotenv.config();
 const app = express();
+const port = process.env.SERVER_PORT;
 
 app.set("case sensitive routing", true);
 app.set("env", "development");
-app.set("port", 4500);
+app.set("port", port);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

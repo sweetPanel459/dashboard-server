@@ -1,11 +1,11 @@
-import { dashboard_mode } from "../models/dashboard-model";
+import { dashboard_model } from "../models/dashboard-model.js";
 
-import { error_handler } from "../helpers/error-handler";
-import { response_handler } from "../helpers/response-handler";
+import { error_handler } from "../helpers/error-handler.js";
+import { response_handler } from "../helpers/response-handler.js";
 
 const get_table = (req, res) => {
   try {
-    dashboard_mode.get_table_model(req, response_handler(data, err));
+    dashboard_model.get_table_model(req, response_handler(data, err));
   } catch (error) {
     error_handler(error, res);
   }
@@ -13,7 +13,7 @@ const get_table = (req, res) => {
 
 const update_table = (req, res) => {
   try {
-    dashboard_mode.get_table_model(req, response_handler(data, err));
+    dashboard_model.get_table_model(req, response_handler(data, err));
   } catch (error) {
     error_handler(error, res);
   }
@@ -21,7 +21,7 @@ const update_table = (req, res) => {
 
 const upload_table = (req, res) => {
   try {
-    dashboard_mode.get_table_model(req, response_handler(data, err));
+    dashboard_model.get_table_model(req, response_handler(data, err));
   } catch (error) {
     error_handler(error, res);
   }
@@ -29,7 +29,7 @@ const upload_table = (req, res) => {
 
 const delete_table = (req, res) => {
   try {
-    dashboard_mode.get_table_model(req, response_handler(data, err));
+    dashboard_model.get_table_model(req, response_handler(data, err));
   } catch (error) {
     error_handler(error, res);
   }
@@ -37,7 +37,7 @@ const delete_table = (req, res) => {
 
 const delete_row_table = (req, res) => {
   try {
-    dashboard_mode.get_table_model(req, response_handler(data, err));
+    dashboard_model.get_table_model(req, response_handler(data, err));
   } catch (error) {
     error_handler(error, res);
   }

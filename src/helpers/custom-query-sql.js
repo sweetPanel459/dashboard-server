@@ -1,4 +1,4 @@
-import { pool } from "../config/mysql";
+import { pool } from "../config/mysql.js";
 
 export const custom_sql_query = async (query, params) => {
   const [rows, fields] = await pool.query(query, [...params]);

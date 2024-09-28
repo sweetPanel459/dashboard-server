@@ -4,6 +4,7 @@ Accept: application/json
 ###
 
 # post new table
+
 POST http://localhost:4500/upload-table
 Content-Type: application/json
 
@@ -15,7 +16,7 @@ Content-Type: application/json
         "col4",
         "col5",
         "col6",
-        "col7",
+        "col7"
     ],
     "body": [
         ["TATIANA CAROLINA", 1, 1, 1, 1, 4, 1],
@@ -40,7 +41,6 @@ Content-Type: application/json
         ["DINA TEHERAN", 19, 18, 16, 16, 73, 19],
         ["MARIA FERNANDA COL", 18, 19, 21, 18, 76, 21]
     ]
-    
 }
 ###
 

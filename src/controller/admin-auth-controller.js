@@ -5,7 +5,9 @@ import { response_handler } from "../helpers/response-handler.js";
 
 const get_admin_data = (req, res) => {
   try {
-    auth_admin_model.get_admin_data_model(req, response_handler(data, err));
+    auth_admin_model.get_admin_data_model(req, (data) =>
+      response_handler(data, res),
+    );
   } catch (error) {
     error_handler(error, res);
   }
@@ -13,7 +15,9 @@ const get_admin_data = (req, res) => {
 
 const register_admin = (req, res) => {
   try {
-    auth_admin_model.register_admin_model(req, response_handler(data, err));
+    auth_admin_model.register_admin_model(req, (data) =>
+      response_handler(data, res),
+    );
   } catch (error) {
     error_handler(error, res);
   }

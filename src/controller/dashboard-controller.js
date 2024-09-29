@@ -11,15 +11,18 @@ const get_table = (req, res) => {
   }
 };
 
-const update_table = (req, res) => {
+const upload_table = (req, res) => {
   try {
-    dashboard_model.get_table_model(req, (data) => response_handler(data, res));
+    console.log(req.body, "desde el controller");
+    // dashboard_model.upload_table_model(req, (data) =>
+    //   response_handler(data, res),
+    // );
   } catch (error) {
     error_handler(error, res);
   }
 };
 
-const upload_table = (req, res) => {
+const update_table = (req, res) => {
   try {
     dashboard_model.get_table_model(req, (data) => response_handler(data, res));
   } catch (error) {

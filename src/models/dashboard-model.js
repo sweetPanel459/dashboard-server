@@ -13,9 +13,12 @@ const get_table_model = async (req, res) => {
   res({ response: res_db });
 };
 
-const update_table_model = (req, res) => {};
+const upload_table_model = (req, res) => {
+  console.lig(req);
+  res({ response: req.body });
+};
 
-const upload_table_model = (req, res) => {};
+const update_table_model = (req, res) => {};
 
 const delete_table_model = (req, res) => {};
 

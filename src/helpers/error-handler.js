@@ -1,8 +1,7 @@
 export const error_handler = (err, res) => {
-  return res.status(err.statusCode).json({
+  return res.json({
     succes: false,
     message: "internal server error",
-    info: err.message,
-    status: err.statusCode,
+    error: err,
   });
 };

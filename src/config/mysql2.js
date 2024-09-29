@@ -1,13 +1,13 @@
 import { createPool } from "mysql2/promise";
 
 const password = process.env.SQL_PASSWORD;
-const host = process.env.SQL_PORT;
+const port = process.env.SQL_PORT;
 
 export const pool = createPool({
   host: "localhost",
-  port: host,
+  port: port,
   user: "root",
   password: password,
-  database: "booksAndSongs",
+  database: "dashboard_tables",
   connectionLimit: "10",
 });

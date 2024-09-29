@@ -14,7 +14,6 @@ const get_table_model = async (req, res) => {
 };
 
 const upload_table_model = (req, res) => {
-  console.lig(req);
   res({ response: req.body });
 };
 

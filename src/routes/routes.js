@@ -16,11 +16,11 @@ router.post("/register-admin", (req, res) => {
 
 // dashboard
 
-router.get("/get-table/:id", (req, res) => {
+router.get("/get-table/:id_admin", (req, res) => {
   dashboard_controller.get_table(req, res);
 });
 
-router.post("/upload-table", (req, res) => {
+router.post("/upload-table/:id_admin", (req, res) => {
   dashboard_controller.upload_table(req, res);
 });
 

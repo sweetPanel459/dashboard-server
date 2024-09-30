@@ -1,11 +1,10 @@
 # get table by table id
-GET http://localhost:4500/get-table/1
+GET http://localhost:4500/get-table/id_table
 Accept: application/json
 ###
 
 # post new table
-
-POST http://localhost:4500/upload-table
+POST http://localhost:4500/upload-table/1
 Content-Type: application/json
 
 {

@@ -49,14 +49,14 @@ Content-Type: application/json
 
 { 
     "id_table": 1,
+    "array_name":"body",
     "header":{
-        "col_index":0, 
-        "new_value":"colmuna de santiago goty"
+        "index":"[0]", 
+        "new_value":["colmuna de santiago goty"]
     }, 
     "body":{
-        "row_index":0,
-        "column_index": 0,
-        "new_value": "santiago andrade tuiran es goty" 
+        "index":["[0][0]", "[0][1]"],
+        "new_value":["santiago andrade", 100000] 
     }
 }
 

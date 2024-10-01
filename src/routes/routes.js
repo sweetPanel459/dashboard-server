@@ -24,7 +24,7 @@ router.post("/upload-table/:id_admin", (req, res) => {
   dashboard_controller.upload_table(req, res);
 });
 
-router.put("/update-table/:id", (req, res) => {
+router.put("/update-table", (req, res) => {
   dashboard_controller.update_table(req, res);
 });
 

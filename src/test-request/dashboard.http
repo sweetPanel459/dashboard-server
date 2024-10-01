@@ -44,12 +44,21 @@ Content-Type: application/json
 ###
 
 # update a row in a table by id 
-PUT  http://localhost:4500/update-table/2
+PUT  http://localhost:4500/update-table
 Content-Type: application/json
 
-[
-    ["MARIA FERNANDA COLasdf", 12, 13, 11, 22, 99, 11]
-]
+{ 
+    "id_table": 1,
+    "header":{
+        "col_index":0, 
+        "new_value":"colmuna de santiago goty"
+    }, 
+    "body":{
+        "row_index":0,
+        "column_index": 0,
+        "new_value": "santiago andrade tuiran es goty" 
+    }
+}
 
 ###
 

@@ -43,21 +43,15 @@ Content-Type: application/json
 }
 ###
 
-# update a row in a table by id 
+# update a row in a table by id, Send the modified row with the changed value
 PUT  http://localhost:4500/update-table
 Content-Type: application/json
 
 { 
-    "id_table": 1,
-    "array_name":"body",
-    "header":{
-        "index":"[0]", 
-        "new_value":["colmuna de santiago goty"]
-    }, 
-    "body":{
-        "index":["[0][0]", "[0][1]"],
-        "new_value":["santiago andrade", 100000] 
-    }
+    "id_table": 2,
+    "row_table_index":1,
+    "part_of_the_table": "body",
+    "new_row_value": ["pinche viejo nigga", 2, 4, 1, 3, 10, 2]
 }
 
 ###

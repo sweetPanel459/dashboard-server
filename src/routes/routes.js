@@ -28,7 +28,7 @@ router.put("/update-table", (req, res) => {
   dashboard_controller.update_table(req, res);
 });
 
-router.delete("/delete-table/:id-table", (req, res) => {
+router.delete("/delete-table/:id_table", (req, res) => {
   dashboard_controller.delete_table(req, res);
 });
 

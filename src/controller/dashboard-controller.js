@@ -23,7 +23,9 @@ const upload_table = (req, res) => {
 
 const update_table = (req, res) => {
   try {
-    dashboard_model.get_table_model(req, (data) => response_handler(data, res));
+    dashboard_model.update_table_model(req, (data) =>
+      response_handler(data, res),
+    );
   } catch (error) {
     error_handler(error, res);
   }
@@ -31,7 +33,9 @@ const update_table = (req, res) => {
 
 const delete_table = (req, res) => {
   try {
-    dashboard_model.get_table_model(req, (data) => response_handler(data, res));
+    dashboard_model.delete_table_model(req, (data) =>
+      response_handler(data, res),
+    );
   } catch (error) {
     error_handler(error, res);
   }

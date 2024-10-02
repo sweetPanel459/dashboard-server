@@ -33,9 +33,9 @@ const update_table_model = async (req, res) => {
 
   const res_db = await custom_sql_query(
     `
-      UPDATE excel_tables 
-      SET table_json = JSON_SET(table_json, ?, JSON_ARRAY(?))
-      WHERE id = ?
+     UPDATE excel_tables 
+     SET table_json = JSON_SET(table_json, ?, JSON_ARRAY(?))
+     WHERE id = ?
     `,
     [row_to_modify, new_row_value.join(","), id_table],
   );
@@ -43,7 +43,16 @@ const update_table_model = async (req, res) => {
   res({ response: res_db });
 };
 
-const delete_table_model = (req, res) => { };
+const delete_table_model = async (req, res) => {
+  const id_table = parseInt(req.params.id_table);
+
+  const res_db = await custom_sql_query(
+    "DELETE FROM excel_tables WHERE id = ?",
+    [id_table],
+  );
+
+  res({ response: res_db });
+};
 
 const delete_row_table_model = (req, res) => { };
 

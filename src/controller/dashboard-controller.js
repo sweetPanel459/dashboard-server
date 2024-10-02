@@ -43,7 +43,9 @@ const delete_table = (req, res) => {
 
 const delete_row_table = (req, res) => {
   try {
-    dashboard_model.get_table_model(req, (data) => response_handler(data, res));
+    dashboard_model.delete_row_table_model(req, (data) =>
+      response_handler(data, res),
+    );
   } catch (error) {
     error_handler(error, res);
   }

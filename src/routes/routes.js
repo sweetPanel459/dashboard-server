@@ -28,10 +28,10 @@ router.put("/update-table", (req, res) => {
   dashboard_controller.update_table(req, res);
 });
 
-router.delete("/delete-table/:id_table", (req, res) => {
-  dashboard_controller.delete_table(req, res);
+router.delete("/delete-row-table/:id_table/:id_row", (req, res) => {
+  dashboard_controller.delete_row_table(req, res);
 });
 
-router.delete("/delete-row-table/:id-table/:id-row", (req, res) => {
-  dashboard_controller.delete_row_table(req, res);
+router.delete("/delete-table/:id_table", (req, res) => {
+  dashboard_controller.delete_table(req, res);
 });
